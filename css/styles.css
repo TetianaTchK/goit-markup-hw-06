@@ -782,7 +782,7 @@ button {
 .chekbox-container {
   margin-bottom: 24px;
 }
-.chekbox-modal:checked + .privacy .accept-span {
+.chekbox-modal:checked + .privacy-label .accept-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
