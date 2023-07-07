@@ -746,7 +746,7 @@ button {
 .input-modal-text:focus {
   border-color: #4d5ae5;
 }
-.input-modal-text:focus + .modal-svg {
+.input-modal-text:focus + .form-icon {
   fill: #4d5ae5;
 }
 .form-icon {
