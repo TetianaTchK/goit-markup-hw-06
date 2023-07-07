@@ -389,8 +389,8 @@
         </div>
     </footer>
     <!--Modal modal-window-->
-    <div class="backdrop  is-hidden" data-modal>
-        <div class="modal">
+    <div class="modal  is-hidden" data-modal>
+        <div class="modal-window">
             <button class="btn-modal-close" type="button" data-modal-close>
                 <svg class="modal-icon" width="8" height="8">
                     <use href="./images/icons.svg#closex"></use>
@@ -403,7 +403,7 @@
                         Name
                     </label>
                     <div class="input-container">
-                        <input class="input-modal-text" id="user-name" type="text" name="user-name" autocomplete="on" />
+                        <input class="input-modal-text" id="user-name" type="text" name="user-name">
                         <svg class="form-icon" width="18" height="24">
                             <use href="./images/icons.svg#person"></use>
                         </svg>
@@ -414,8 +414,7 @@
                         Phone
                     </label>
                     <div class="input-container">
-                        <input class="input-modal-text" id="user-phone" type="tel" name="user-phone"
-                            autocomplete="on" />
+                        <input class="input-modal-text" id="user-phone" type="tel" name="user-phone">
                         <svg class="form-icon" width="18" height="24">
                             <use href="./images/icons.svg#phone"></use>
                         </svg>
@@ -426,8 +425,7 @@
                         Email
                     </label>
                     <div class="input-container">
-                        <input class="input-modal-text" id="user-email" type="email" name="user-email"
-                            autocomplete="on" />
+                        <input class="input-modal-text" id="user-email" type="email" name="user-email">
                         <svg class="form-icon" width="18" height="24">
                             <use href="./images/icons.svg#email"></use>
                         </svg>
@@ -441,12 +439,12 @@
                     </textarea>
                 </div>
                 <div class="chekbox-container">
-                    <input class="input-chekbox visually-hidden" type="checkbox" id="user-privacy" value="true"
+                    <input class="chekbox-modal visually-hidden" type="checkbox" id="user-privacy" value="true"
                         name="user-privacy" required>
-                    <label class="privacy" for="user-privacy">
+                    <label class="privacy-label" for="user-privacy">
                         <span class="accept-span">
                             <svg class="accept-icon" width="10" height="8">
-                                <use href="./images/icons.svg#"></use>
+                                <use href="./images/icons.svg#vectorok"></use>
                             </svg>
                         </span>
                         I accept the terms and conditions of the
