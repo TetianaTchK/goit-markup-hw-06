@@ -10,10 +10,49 @@ body {
   font-family: var(--primary-font);
   font-size: 16px;
 }
+/*Base styles for small devices*/
 .container {
-  width: 1158px;
+  min-width: 320;
+  max-width: 428;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px; */
+}
+.section {
+  padding-top: 38, 5px;
+  padding-bottom: 38, 5px;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+/*Tablet screen*/
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 768;
+  }
+}
+/*Desktop screen*/
+@media screen and (min-width: 1158px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1158;
+  }
 }
 /*Reset*/
 h1,
@@ -816,7 +855,6 @@ button {
 .btn-send-modal {
   font-family: 'Roboto', sans-serif;
   display: block;
-  margin: 0 auto;
   min-width: 169px;
   height: 56px;
   font-size: 16px;
@@ -828,5 +866,7 @@ button {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 40px;
+  margin-left: 91px;
+  margin-right: 91px;
 }
-/*rrrrrr*/
