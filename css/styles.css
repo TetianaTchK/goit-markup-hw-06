@@ -311,7 +311,7 @@ button {
     row-gap: 72px;
     padding-left: 16px;
   }
-  .container-icon {
+  .benefits-icon {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -340,26 +340,22 @@ button {
     width: 322px;
   }
   .benefits-list-items {
-  width: calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2);
+  }
 }
-.benefits-description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-.container-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-.benefits-icon {
-  margin: 0 auto;
+@media (max-width: 767px) {
+  .benefits-icon {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 /*Section work*/
 .work-section {
