@@ -9,6 +9,8 @@ body {
   background-color: var(--main-white-cl);
   font-family: var(--primary-font);
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 /*Base styles for small devices*/
 .container {
@@ -18,9 +20,6 @@ body {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-  /* width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px; */
 }
 .section {
   padding-top: 38, 5px;
@@ -302,6 +301,16 @@ button {
   flex-wrap: wrap;
   gap: 24px;
 }
+/* .benefits-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+} */
+
 @media (min-width: 767px) and (max-width: 1157px) {
   .benefits-section {
     padding-top: 96px;
@@ -343,7 +352,7 @@ button {
     width: calc((100% - 24px) / 2);
   }
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .benefits-icon {
     position: absolute;
     width: 1px;
@@ -918,7 +927,7 @@ button {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
   color: white;
   background-color: #4d5ae5;
   border: none;
