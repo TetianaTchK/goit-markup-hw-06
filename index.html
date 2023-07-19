@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="body">
+<body>
     <!-- Header -->
     <header class="header-webstudio">
         <div class="header-container container">
             <nav class="header-webstudio-navigation">
-                <a href="./index.html" class="header-logo link">Web<span
+                <a href="./index.html" class="header-logo link logo">Web<span
                         class="header-studio-two link">Studio</span></a>
                 <ul class="header-menu list">
                     <li class="header-menu-item"><a class="header-menu-link active header-menu-link-studio link"
@@ -333,7 +333,7 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
+        <div class="footer-container-text container">
             <div class="footer-content">
                 <a class="footer-logo link" href="./index.html">Web<span class="footer-logo-two">Studio</span></a>
                 <p class="footer-descript">Increase the flow of customers and sales for your business with digital
@@ -396,7 +396,65 @@
         </div>
     </footer>
     <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="">
+        <button class="menu-toggle js-close-menu">
+            <svg class="modal-icon" width="8" height="8">
+                <use href="./images/icons.svg#closex"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+        </ul>
 
+        <ul class="mobile-address-list list">
+            <li><a class="mobile-number link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <li><a class="mobile-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+
+        </ul>
+
+        <ul class="mobile-social-item">
+            <li class="social-item">
+                <a class="social-link" href="">
+                    <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-item">
+                <a class="social-link" href="">
+                    <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-item">
+                <a class="social-link" href="">
+                    <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-item">
+                <a class="social-link" href="">
+                    <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     <!--Modal modal-window-->
     <div class="modal  is-hidden" data-modal>
         <div class="modal-window">
@@ -469,10 +527,6 @@
             </form>
         </div>
     </div>
-
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
     <script defer src="js/mobile-menu.js"></script>
 
 </body>
