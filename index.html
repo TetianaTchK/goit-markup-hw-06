@@ -6,16 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <title>WebStudio</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -396,7 +393,7 @@
         </div>
     </footer>
     <!-- Mobile menu -->
-    <div class="menu-container js-menu-container" id="">
+    <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
             <svg class="modal-icon" width="8" height="8">
                 <use href="./images/icons.svg#closex"></use>
@@ -404,10 +401,10 @@
         </button>
         <ul class="mobile-menu">
             <li class="mobile-menu-item">
-                <a class="mobile-menu-link link" href="">Studio</a>
+                <a class="mobile-menu-link link" href="./index.html">Studio</a>
             </li>
             <li class="mobile-menu-item">
-                <a class="mobile-menu-link link" href="">Portfolio</a>
+                <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="mobile-menu-item">
                 <a class="mobile-menu-link link" href="">Contacts</a>
@@ -423,38 +420,34 @@
         <ul class="mobile-social-item">
             <li class="social-item">
                 <a class="social-link" href="">
-                    <svg class="team-icon" width="16" height="16">
+                    <svg class="team-icon" width="24" height="24">
                         <use href="./images/icons.svg#instagram"></use>
                     </svg>
                 </a>
             </li>
             <li class="social-item">
                 <a class="social-link" href="">
-                    <svg class="team-icon" width="16" height="16">
+                    <svg class="team-icon" width="24" height="24">
                         <use href="./images/icons.svg#twitter"></use>
                     </svg>
                 </a>
             </li>
             <li class="social-item">
                 <a class="social-link" href="">
-                    <svg class="team-icon" width="16" height="16">
+                    <svg class="team-icon" width="24" height="24">
                         <use href="./images/icons.svg#facebook"></use>
                     </svg>
                 </a>
             </li>
             <li class="social-item">
                 <a class="social-link" href="">
-                    <svg class="team-icon" width="16" height="16">
+                    <svg class="team-icon" width="24" height="24">
                         <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                 </a>
             </li>
         </ul>
     </div>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>
     <!--Modal modal-window-->
     <div class="modal  is-hidden" data-modal>
         <div class="modal-window">
@@ -527,7 +520,13 @@
             </form>
         </div>
     </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+        </script>
     <script defer src="js/mobile-menu.js"></script>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 
