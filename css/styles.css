@@ -16,8 +16,8 @@ body {
 
 /*Base styles for small devices*/
 .container {
-  min-width: 320;
-  max-width: 428;
+  min-width: 320px;
+  max-width: 428px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -26,7 +26,7 @@ body {
 /*Tablet screen*/
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768;
+    max-width: 768px;
   }
 }
 
@@ -694,7 +694,7 @@ button {
   .team-section-list {
     flex-direction: column;
     gap: 72px;
-    width: calc((100%-24px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -1295,7 +1295,7 @@ button {
   text-transform: capitalize;
 }
 
-@media only screen and (max-width: 448px) and {
+@media only screen and (max-width: 448px) {
   .number-link {
     font-size: 20px;
   }
