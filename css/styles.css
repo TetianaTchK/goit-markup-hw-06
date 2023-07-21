@@ -368,7 +368,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-hero/Dark-bg@1x.jpg);
+      url(../images/people-office.jpg);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -377,7 +377,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-hero/Dark-bg@1x.jpg);
+      url(../images/people-office.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2),
@@ -388,7 +388,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-hero/Dark-bg@1x.jpg);
+      url(../images/people-office.jpg);
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -397,7 +397,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-hero/Dark-bg@1x.jpg);
+      url(../images/people-office.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2),
@@ -408,7 +408,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-hero/Dark-bg@1x.jpg);
+      url(../images/people-office.jpg);
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -526,44 +526,32 @@ button {
     margin-bottom: 8px;
   }
 }
-.benefits-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
 @media (min-width: 767px) and (max-width: 1157px) {
   .benefits-section {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  /* .benefits-list {
-    row-gap: 72px;
-    padding-left: 16px;
-  } */
-  @media only screen and (min-width: 768px) {
-    .benefits-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-    }
-  }
-  .benefits-icon {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
-  .benefits-list-items {
-    width: calc((100% - 24px) / 2);
+}
+@media only screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
   }
 }
+.benefits-icon {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
   .benefits-list-items {
     padding-top: 96px;
@@ -582,8 +570,10 @@ button {
 }
 
 /*Section work*/
-.work-section {
-  padding-bottom: 120px;
+@media only screen and (max-width: 1157px) {
+  .work-section {
+    display: none;
+  }
 }
 .work-section-name {
   font-weight: 700;
@@ -604,12 +594,8 @@ button {
 }
 /*Section our team*/
 .team-section {
-  background: #f4f4fd;
-  padding: 120px 0;
-}
-.team-section-list {
-  display: flex;
-  gap: 24px;
+  background-color: #f4f4fd;
+  padding-bottom: 96px;
 }
 .team-section-name {
   font-weight: 700;
@@ -619,17 +605,40 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  padding-top: 96px;
   margin-bottom: 72px;
+}
+.team-section-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 767px) {
+  .team-section-list {
+    flex-direction: column;
+    gap: 72px;
+    width: calc((100%-24px) / 2);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .team-section-list {
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
 }
 .team-section-item {
   background-color: var(--main-white-cl);
-  width: calc((100% - 72px) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  width: 264px;
+  margin: 0 auto;
 }
-.team-item-card {
-  padding: 32px 0;
+@media only screen and (min-width: 768px) {
+  .team-section-item {
+    margin: 0;
+  }
 }
 .team-section-person {
   font-weight: 500;
@@ -654,6 +663,9 @@ button {
   justify-content: center;
   gap: 24px;
 }
+.team-item-card {
+  padding: 32px 0;
+}
 .social-item {
   width: 40px;
   height: 40px;
@@ -676,10 +688,6 @@ button {
   fill: #f4f4fd;
 }
 /*section Customers*/
-.customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 .customers-icon {
   fill: currentColor;
 }
