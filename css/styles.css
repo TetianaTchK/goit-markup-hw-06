@@ -730,7 +730,12 @@ button {
 
 @media only screen and (min-width: 768px) {
   .team-section-item {
-    margin: 0;
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .team-section-item {
+    width: calc((100% - 72px) / 4);
   }
 }
 
