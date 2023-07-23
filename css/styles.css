@@ -633,7 +633,7 @@ button {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
 }
 
@@ -734,11 +734,11 @@ button {
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 768px) {
-  .team-section-item {
+/* @media only screen and (min-width: 768px) */
+/* .team-section-item {
     width: calc((100% - 24px) / 2);
   }
-}
+} */
 @media screen and (min-width: 1158px) {
   .team-section-item {
     width: calc((100% - 72px) / 4);
@@ -1048,10 +1048,9 @@ button {
   .footer-container-text {
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
+    /* margin: ; */
   }
 }
-
 /* @media only screen and (min-width: 1158px) {
   .footer-container-text {
     display: flex;
@@ -1115,7 +1114,7 @@ button {
   margin: 0 auto;
   font-weight: 400;
   font-size: 16px;
-  padding-bottom: 72px;
+  /* padding-bottom: 72px; */
 }
 
 @media only screen and (min-width: 1158px) {
@@ -1189,10 +1188,22 @@ button {
 .social-footer-link:focus {
   background-color: #31d0aa;
 }
-
-/* .subscribe-conteiner {
-  margin-left: 80px;
+@media (min-width: 320px) and (max-width: 767px) {
+  .subscribe-conteiner {
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* @media (min-width: 767px) and (max-width: 1157px){
+.subscribe-conteiner {
+    margin-left: 108px;
+}
 } */
+@media screen and (min-width: 1158px) {
+  .subscribe-conteiner {
+    margin-left: 80px;
+  }
+}
 .subscribe {
   margin-bottom: 16px;
   font-weight: 500;
@@ -1289,7 +1300,7 @@ button {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: 404BBF;
+  color: #404bbf;
 }
 
 .mobile-menu-item:not(:last-child) {
@@ -1323,7 +1334,7 @@ button {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  color: 404BBF;
+  color: #404bbf;
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
