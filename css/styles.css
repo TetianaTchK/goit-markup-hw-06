@@ -801,6 +801,9 @@ button {
 }
 
 /*section Customers*/
+.customers {
+  padding: 120px 0;
+}
 .customers-icon {
   fill: currentColor;
 }
