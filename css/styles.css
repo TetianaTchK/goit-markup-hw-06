@@ -712,7 +712,7 @@ button {
   .team-section-list {
     flex-direction: column;
     gap: 72px;
-    width: calc((100% - 24px) / 2);
+    /* width: calc((100% - 24px) / 2); */
   }
 }
 
