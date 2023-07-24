@@ -672,6 +672,9 @@ button {
   .benefits-list-items:not(:last-child) {
     margin-bottom: 72px;
   }
+  .team-section-item {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 1157px) {
@@ -1070,6 +1073,10 @@ button {
   .footer {
     padding: 100px 0;
   }
+  .footer-container-text {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* .footer-container-text {
@@ -1089,13 +1096,6 @@ button {
   }
 }
 
-/* @media only screen and (min-width: 768px) {
-  .footer-container-text {
-    display: flex;
-      margin: 80px;
-    flex-wrap: wrap;
-  }
-} */
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-container-text {
     max-width: 550px;
@@ -1106,11 +1106,11 @@ button {
     margin-bottom: 72px;
   }
 }
-@media (min-width: 767px) and (max-width: 1157px) {
+/* @media (min-width: 767px) and (max-width: 1157px) {
   .footer-content {
     max-width: 550px;
   }
-}
+} */
 @media only screen and (min-width: 1158px) {
   .footer-content {
     margin-right: 120px;
